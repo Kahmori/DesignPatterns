@@ -23,4 +23,14 @@ public class Botao {
 
   public void setTipoBorda(TipoBordaEnum tipoBorda){this.tipoBorda = tipoBorda;}
 
+  @Override
+    public String toString(){
+      return "Botao{" +
+              "cor='" + cor + '\'' +
+              ", altura=" + altura + '\'' +
+              ", largura=" + largura + '\'' +
+              ", tipoBorda=" + tipoBorda + '\'' +
+              '}';
+    }
+
 }
