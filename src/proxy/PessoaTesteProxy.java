@@ -7,7 +7,10 @@ import builder.PessoaBuilder;
 
 public class PessoaTesteProxy {
   public static void main(String[] args) {
-    PessoaServiceProxy pessoaService = new PessoaServiceProxy(new PessoaRepositoryProxy());
+    PessoaRepositoryProxy pessoaRepositoryProxy = new PessoaRepositoryProxy();
+    NovoPessoaRepositoryProxy novoPessoaRepositoryProxy = new NovoPessoaRepositoryProxy();
+
+    PessoaServiceProxy pessoaService = new PessoaServiceProxy(novoPessoaRepositoryProxy);
 
     Pessoa pessoa = new PessoaBuilder()
           .nome("Felipe")
