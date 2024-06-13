@@ -22,5 +22,8 @@ public class PessoaTesteProxy {
 
           Pessoa pessoaRetornada = pessoaService.findById(1L);
           System.out.println(pessoaRetornada);
+
+          Pessoa pessoaRetornadaCache = pessoaService.findById(1L);
+          System.out.println(pessoaRetornadaCache);
   }
 }
